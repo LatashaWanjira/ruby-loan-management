@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Loan Management System</title>
+    	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    	<link rel='stylesheet' href='stylesheets/styles.css'>
+    	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Courgette'>
+    </head>
+	<body>
+	<nav class="navbar navbar-default navbar-static-top">
+	    <div class="container-fluid">
+	        <div class="navbar-header">
+	            <a class="navbar-brand" href="/">LMS</a>
+	        </div>
+	        <ul class="nav navbar-nav navbar-right">
+	            <li><a href="/loans/new">Given Loan Form</a></li>
+	            <li><a href="/borrowed/new">Taken Loan Form</a></li>
+	            <li><a href="/loans">Loans Given</a></li>
+	            <li><a href="/borrowed">Loans Taken</a></li>
+	        </ul>
+	    </div>
+	</nav>
+		<%= yield %>
+	</body>
+</html>

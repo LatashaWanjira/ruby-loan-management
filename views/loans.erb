@@ -1,0 +1,11 @@
+<div class="container">
+
+<h2>People who have taken loans:</h2>
+
+<ul>
+	<% @loans.each() do |loan| %>
+    <li><a href="/loans/<%= loan.id() %>"><%= loan.name() %></a></li>
+	<% end %>
+</ul>
+
+</div>

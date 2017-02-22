@@ -1,0 +1,11 @@
+<div class="container">
+
+<h2>People who I have taken loans from:</h2>
+
+<ul>
+	<% @borrowed.each() do |borrow| %>
+    <li><a href="/borrowed/<%= borrow.id() %>"><%= borrow.name_of_lender() %></a></li>
+	<% end %>
+</ul>
+
+</div>
